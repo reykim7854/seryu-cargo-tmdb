@@ -1,0 +1,36 @@
+.banner {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.banner__image {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2 / 1;
+  height: 100%;
+}
+
+.banner__content {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 900px) {
+  .banner__content {
+    min-height: 400px;
+    height: fit-content;
+    max-height: fit-content;
+  }
+
+  .banner__image {
+    aspect-ratio: 16 / 1;
+  }
+}

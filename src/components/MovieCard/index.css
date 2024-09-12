@@ -1,0 +1,33 @@
+.movie-card {
+  width: 193px;
+}
+
+.movie-card__image {
+  width: inherit;
+  height: 290px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.movie-card__caption {
+  padding: 8px 16px;
+}
+
+.caption__title,
+.caption__subtitle {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.caption__title {
+  color: var(--color-secondary);
+  font-size: 1.125rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.caption__subtitle {
+  color: var(--color-gray);
+  font-size: 0.75rem;
+}

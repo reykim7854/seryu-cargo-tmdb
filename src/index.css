@@ -1,68 +1,93 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  background-color: #000000;
+  color-scheme: only dark;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
+  font-weight: 400;
+  line-height: normal;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  --bg-primary: #0ea5e9;
+  --bg-secondary: #050e12;
+  --color-secondary: #b6b6b6;
+  --color-gray: #828282;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.main__content {
+  width: 100%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+a:visited {
+  color: inherit;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* Font Families */
+.font-inter--regular {
+  font-family: var(--font-inter);
+  font-weight: 400;
+}
+
+.font-inter--bold {
+  font-family: var(--font-inter);
+  font-weight: 700;
+}
+
+.font-poppins--semibold {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+}
+
+.font-poppins--regular {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+}
+
+.font-poppins--bold {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+}
+
+.font-poppins--black {
+  font-family: var(--font-poppins);
+  font-weight: 900;
+}
+
+.font-roboto--bold {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+}
+
+.font-roboto--black {
+  font-family: var(--font-roboto);
+  font-weight: 900;
+}
+
+/* --------------- */
+
+@media screen and (min-width: 1600px) {
+  .main__content {
+    width: 1600px;
   }
 }
