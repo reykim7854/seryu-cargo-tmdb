@@ -1,6 +1,6 @@
 {
   "homepage": "https://reykim7854.github.io/tmdb-app",
-  "name": "seryu-cargo-tmdb",
+  "name": "tmdb-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
